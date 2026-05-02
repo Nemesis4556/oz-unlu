@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evde Yangın Güvenliği İpuçları | Öz Ünlü Yangın</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    
+    <style>
+        .article-container { max-width: 800px; margin: 160px auto 80px; padding: 0 24px; }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--text-muted); text-decoration: none; margin-bottom: 40px; font-weight: 500; letter-spacing: 0.5px; transition: color 0.3s; }
+        .back-link:hover { color: var(--gold); }
+        .article-header h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3rem); color: var(--text); margin-bottom: 20px; line-height: 1.1; }
+        .article-meta { color: var(--gold); font-size: 0.85rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 40px; }
+        .article-hero-img { width: 100%; height: 450px; object-fit: cover; border-radius: 24px; margin-bottom: 50px; border: 1px solid var(--border-light); }
+        .article-body { color: var(--text-secondary); font-size: 1.1rem; line-height: 1.9; font-weight: 300; }
+        .article-body h2 { font-family: var(--font-serif); color: var(--text); font-size: 1.8rem; margin: 50px 0 24px; font-weight: 500; }
+        .article-body p, .article-body ul { margin-bottom: 24px; }
+        .article-body ul { padding-left: 20px; }
+        .article-body li { margin-bottom: 10px; }
+        .article-body strong { color: var(--text); font-weight: 600; }
+    </style>
+</head>
+<body class="nav-is-scrolled">
+
+    <!-- ÜST MENÜ -->
+    <nav id="navbar" class="scrolled" role="navigation">
+        <a href="index.html" class="nav-logo">ÖZ <span>ÜNLÜ</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#features">Özellikler</a></li>
+            <li><a href="index.html#products">Ürünler</a></li>
+            <li><a href="index.html#gallery">Galeri</a></li>
+            <li><a href="index.html#usage">Kullanım</a></li>
+            <li><a href="index.html#certificates">Sertifikalar</a></li>
+            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#contact">İletişim</a></li>
+        </ul>
+        <a href="tel:+905327986434" class="nav-cta pulse-cta">
+            <span class="pulse-ring"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>Hemen Ara</span>
+        </a>
+        <button class="nav-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    </nav>
+
+    <!-- MOBİL MENÜ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#hero">Ana Sayfa</a>
+        <a href="index.html#features">Özellikler</a>
+        <a href="index.html#products">Ürünler</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="index.html#contact">İletişim</a>
+    </div>
+
+    <!-- BLOG İÇERİĞİ -->
+    <main class="article-container">
+        <a href="index.html#blog" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Bilgi Merkezine Dön
+        </a>
+
+        <header class="article-header">
+            <h1>Evde Yangın Güvenliği İpuçları</h1>
+            <div class="article-meta">2 Ocak 2026 • 3 Dk Okuma • Yaşam Alanı</div>
+        </header>
+
+        <!-- index.html'deki görsele uygun yol -->
+        <img src="images/blog3.png" alt="Ev Yangın Güvenliği" class="article-hero-img">
+
+        <div class="article-body">
+            <p>Yaşam alanlarımız, güvende hissetmemiz gereken en özel sınırlarımızdır. Ancak istatistikler, yangınların çok büyük bir kısmının evlerde, özellikle de dikkatsizlik sonucu mutfaklarda ve hatalı elektrik tesisatlarında başladığını gösteriyor. Estetikten ve konfordan ödün vermeden, evinizi profesyonel bir güvenlik kalkanıyla nasıl donatabilirsiniz?</p>
+
+            <h2>Mutfaktaki Görünmez Tehlike: Yağ Yangınları</h2>
+            <p>Ev yangınlarının bir numaralı sorumlusu, kızartma tavalarında veya ocak üzerinde unutulan yağlardır. Yağ yangınlarına (F/K Sınıfı) <strong>asla su ile müdahale edilmemelidir.</strong> Su, kızgın yağın patlayarak tüm mutfağa yayılmasına neden olur. Bu tarz yangınlar için mutfağınızda kolay erişilebilir, estetik tasarımlı 1 kg veya 2 kg'lık ABC tozlu ya da özel K tipi bir söndürücü bulundurmak olası bir faciayı saniyeler içinde önler.</p>
+
+            <h2>Almanız Gereken 3 Temel Önlem</h2>
+            <ul>
+                <li><strong>Kaçış Planı:</strong> Evin tüm bireylerinin bildiği, dumansız ve en hızlı çıkış senaryosu önceden belirlenmelidir. Özellikle çocuklara bu plan oyunlaştırılarak anlatılmalıdır.</li>
+                <li><strong>Gece Güvenliği:</strong> Uyumadan önce yüksek akım çeken şarj cihazları ve elektrikli ısıtıcılar mutlaka prizden çekilmelidir. Prizlerdeki aşırı yüklenme, gece başlayan sessiz yangınların ana nedenidir.</li>
+                <li><strong>Doğru Ekipman Seçimi:</strong> Ev içi kullanımda büyük ve ağır endüstriyel tüpler yerine, aile bireylerinin panik anında bile rahatça kaldırıp kullanabileceği (1 kg veya 2 kg) ergonomik söndürücüler tercih edilmelidir.</li>
+            </ul>
+
+            <p>Güvenlik sadece fabrikalar veya büyük işletmeler için değildir. Evinizin yapısına ve ihtiyaçlarına en uygun söndürme teknolojilerini belirlemek için Öz Ünlü Yangın uzman ekibiyle iletişime geçebilirsiniz.</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="lux-footer">
+        <div class="lux-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">ÖZ <span>ÜNLÜ</span></a>
+                    <p>20 yıllık deneyimle Akhisar ve çevresinde profesyonel yangın güvenliği çözümleri.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <p><a href="tel:+905327986434">+90 531 570 89 61</a></p>
+                    <p><a href="mailto:info@ozunluyangin.com">info@ozunluyangin.com</a></p>
+                    <p>Akhisar, Manisa, TR</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Öz Ünlü Yangın. Tüm hakları saklıdır.</p>
+                <p class="footer-credit">Designed by <span>Ckr Tech</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
