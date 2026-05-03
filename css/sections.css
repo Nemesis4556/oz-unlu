@@ -1368,3 +1368,53 @@ g.active-service:hover path {
 .soft-img.loaded {
     opacity: 1; /* Usulca görünür hale gelir */
 }
+/* ══════════════════════════════════════
+   GÖRSEL YÜKLENİYOR (SPINNER) VE CLS KİLİDİ
+══════════════════════════════════════ */
+.product-img-wrap, 
+.gallery-img-wrap, 
+.blog-img-wrap {
+    background-color: var(--bg-surface); /* Resim inene kadar lüks koyu zemin */
+    position: relative;
+    z-index: 1;
+}
+
+/* Dönen Altın Daire (Spinner) */
+.product-img-wrap::before, 
+.gallery-img-wrap::before, 
+.blog-img-wrap::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    margin-left: -18px;
+    border: 3px solid var(--border-light);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: imageSpin 1s linear infinite;
+    z-index: -1; /* Resmin arkasında döner */
+    transition: opacity 0.4s ease;
+}
+
+/* Resim yüklendiğinde spinner'ı yumuşakça gizle */
+.product-img-wrap:has(.loaded)::before, 
+.gallery-img-wrap:has(.loaded)::before, 
+.blog-img-wrap:has(.loaded)::before {
+    opacity: 0;
+}
+
+@keyframes imageSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* Soft Yükleme Efekti (Eğer base.css'te yoksa bunu da ekle) */
+.soft-img {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 1s var(--ease-out-expo), filter 0.6s !important;
+}
+.soft-img.loaded {
+    opacity: 1;
+}
